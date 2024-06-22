@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <style>
+        .entity{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container mt-5">
+        <div style="background-image: url(https://wallpaperaccess.com/full/1808528.jpg); background-size: cover; background-position: center; height: 900px; padding: 20px; border-radius: 8px;">
+            <div>
+                <h1 style="text-align: center ; background-color: white; padding: 10px;">List Builder</h1>
+            </div>
+        <form id="entity-form">
+            <div class="form-group" style="padding: 10px;">
+                <label for="entity-name" style="background-color: white; padding: 10px; font-size: larger;">Unit</label>
+                <input type="text" class="form-control" id="entity-name" required style="padding: 10px;">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+                <label for="entity-description" style="background-color: white; padding: 10px; font-size: larger; ">Points</label>
+                <input type="text" class="form-control" id="entity-description" required style="padding: 10px">
+            </div>
+            <button type="submit" class="btn btn-primary" style="padding: 10px; font-size: medium;">Add Unit</button>
+        </form>
+
+        <div id="entities" class="list-group mt-4" style="background-color: white; padding: 10px; font-size: larger; "></div>
+        <div id="entities" class="list-group mt-4"style="background-color: white; padding: 10px; font-size: larger;">
+            <h4>Total Value:<span id="total-value">0</span></h4>
+        </div>
+    </div>
+    </div>
+  
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
