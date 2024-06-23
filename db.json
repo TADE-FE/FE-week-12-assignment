@@ -1,3 +1,14 @@
 {
-  "entities":  []
+  "entities": [
+    {
+      "id": "1e22",
+      "name": "Captain",
+      "description": "100"
+    },
+    {
+      "id": "f041",
+      "name": "Tactical Squad",
+      "description": "150"
+    }
+  ]
 }
